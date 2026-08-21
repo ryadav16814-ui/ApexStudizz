@@ -3,120 +3,528 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Class 11 Biology Notes</title>
+
+<title>Class 11 Biology Notes | ApexStudizz</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
+    margin:0;
     font-family:Arial, sans-serif;
-    margin:0;
-    background:#f5f7fa;
+    background:linear-gradient(135deg,#eef4ff,#fff0f8);
+    color:#172554;
 }
 
-h1{
-    background:#2563eb;
-    color:white;
+/* HEADER */
+
+header{
+    padding:30px 20px;
     text-align:center;
-    padding:20px;
-    margin:0;
-}
-
-/* TABLE */
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-}
-
-th,td{
-    border:1px solid #ddd;
-    padding:12px;
-    text-align:left;
-}
-
-th{
-    background:#2563eb;
     color:white;
+    background:linear-gradient(135deg,#2563eb,#ec4899);
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    box-shadow:0 8px 25px rgba(37,99,235,0.25);
 }
 
-/* NOTES */
-.notes{
-    padding:20px;
+header h1{
+    margin:0;
+    font-size:30px;
 }
 
-h2{
-    background:#e8f0ff;
-    padding:10px;
-    border-left:5px solid #2563eb;
+header p{
+    margin:8px 0 0;
+    opacity:.95;
+}
+
+/* MAIN */
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:25px 15px;
+}
+
+/* TITLE */
+
+.section-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.section-title h2{
+    margin:0;
+    color:#2563eb;
+}
+
+.section-title span{
+    color:#ec4899;
+}
+
+/* CHAPTER GRID */
+
+.chapter-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+/* CHAPTER CARD */
+
+.chapter{
+    text-decoration:none;
+    color:#172554;
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    border:2px solid #dbeafe;
+    box-shadow:0 5px 15px rgba(0,0,0,0.07);
+    transition:.25s;
+    display:block;
+}
+
+.chapter:hover{
+    transform:translateY(-5px);
+    border-color:#ec4899;
+    box-shadow:0 10px 25px rgba(236,72,153,0.18);
+}
+
+.chapter:active{
+    transform:scale(.97);
+}
+
+/* NUMBER */
+
+.number{
+    display:inline-flex;
+    width:38px;
+    height:38px;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#ec4899);
+    color:white;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* CHAPTER NAME */
+
+.chapter-name{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    line-height:1.4;
+}
+
+/* OPEN TEXT */
+
+.open{
+    display:block;
+    margin-top:8px;
+    color:#ec4899;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+    font-size:13px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:25px;
+    }
+
+    .chapter-grid{
+        grid-template-columns:1fr;
+    }
+
+    .chapter{
+        padding:16px;
+    }
+
 }
 
 </style>
 </head>
+
 <body>
 
-<h1>📘 Class 11 Biology Notes</h1>
+<header>
 
-<!-- TABLE -->
-<table>
-<tr>
-    <th>Chapter No.</th>
-    <th>Chapter Name</th>
-</tr>
+    <h1>📘 Class 11 Biology Notes</h1>
 
-<tr><td>1</td><td><a href="#ch1">The Living World</a></td></tr>
-<tr><td>2</td><td><a href="#ch2">Biological Classification</a></td></tr>
-<tr><td>3</td><td><a href="#ch3">Plant Kingdom</a></td></tr>
-<tr><td>4</td><td><a href="#ch4">Animal Kingdom</a></td></tr>
-<tr><td>5</td><td><a href="#ch5">Morphology of Flowering Plants</a></td></tr>
-<tr><td>6</td><td><a href="#ch6">Anatomy of Flowering Plants</a></td></tr>
-<tr><td>7</td><td><a href="#ch7">Structural Organisation in Animals</a></td></tr>
-<tr><td>8</td><td><a href="#ch8">Cell: The Unit of Life</a></td></tr>
-<tr><td>9</td><td><a href="#ch9">Biomolecules</a></td></tr>
-<tr><td>10</td><td><a href="#ch10">Cell Cycle and Cell Division</a></td></tr>
-<tr><td>11</td><td><a href="#ch11">Transport in Plants</a></td></tr>
-<tr><td>12</td><td><a href="#ch12">Mineral Nutrition</a></td></tr>
-<tr><td>13</td><td><a href="#ch13">Photosynthesis in Higher Plants</a></td></tr>
-<tr><td>14</td><td><a href="#ch14">Respiration in Plants</a></td></tr>
-<tr><td>15</td><td><a href="#ch15">Plant Growth and Development</a></td></tr>
-<tr><td>16</td><td><a href="#ch16">Digestion and Absorption</a></td></tr>
-<tr><td>17</td><td><a href="#ch17">Breathing and Exchange of Gases</a></td></tr>
-<tr><td>18</td><td><a href="#ch18">Body Fluids and Circulation</a></td></tr>
-<tr><td>19</td><td><a href="#ch19">Excretory Products and Elimination</a></td></tr>
+    <p>
+        NCERT Based • Chapter-wise Notes
+    </p>
 
-</table>
+</header>
 
-<!-- NOTES SECTION -->
-<div class="notes">
 
-<h2 id="ch1">Chapter 1: The Living World</h2>
-<h2 id="ch2">Chapter 2: Biological Classification</h2>
-<h2 id="ch3">Chapter 3: Plant Kingdom</h2>
-<h2 id="ch4">Chapter 4: Animal Kingdom</h2>
-<h2 id="ch5">Chapter 5: Morphology of Flowering Plants</h2>
-<h2 id="ch6">Chapter 6: Anatomy of Flowering Plants</h2>
-<h2 id="ch7">Chapter 7: Structural Organisation in Animals</h2>
-<h2 id="ch8">Chapter 8: Cell: The Unit of Life</h2>
-<h2 id="ch9">Chapter 9: Biomolecules</h2> 
-  <h2 id="ch9">Chapter 9: Biomolecules</h2>
+<div class="container">
 
-<iframe 
-    src="biomolecules.pdf"
-    width="100%"
-    height="700px"
-    style="border:none;">
-</iframe>
-<h2 id="ch10">Chapter 10: Cell Cycle and Cell Division</h2>
-<h2 id="ch11">Chapter 11: Transport in Plants</h2>
-<h2 id="ch12">Chapter 12: Mineral Nutrition</h2>
-<h2 id="ch13">Chapter 13: Photosynthesis in Higher Plants</h2>
-<h2 id="ch14">Chapter 14: Respiration in Plants</h2>
-<h2 id="ch15">Chapter 15: Plant Growth and Development</h2>
-<h2 id="ch16">Chapter 16: Digestion and Absorption</h2>
-<h2 id="ch17">Chapter 17: Breathing and Exchange of Gases</h2>
-<h2 id="ch18">Chapter 18: Body Fluids and Circulation</h2>
-<h2 id="ch19">Chapter 19: Excretory Products and Elimination</h2>
+    <div class="section-title">
+
+        <h2>
+            Biology <span>Chapters</span>
+        </h2>
+
+        <p>
+            Click any chapter to open its PDF 📄
+        </p>
+
+    </div>
+
+
+    <div class="chapter-grid">
+
+
+        <!-- CHAPTER 1 -->
+
+        <a class="chapter" href="pdf/chapter1.pdf" target="_blank">
+
+            <span class="number">01</span>
+
+            <span class="chapter-name">
+                The Living World
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 2 -->
+
+        <a class="chapter" href="pdf/chapter2.pdf" target="_blank">
+
+            <span class="number">02</span>
+
+            <span class="chapter-name">
+                Biological Classification
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 3 -->
+
+        <a class="chapter" href="pdf/chapter3.pdf" target="_blank">
+
+            <span class="number">03</span>
+
+            <span class="chapter-name">
+                Plant Kingdom
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 4 -->
+
+        <a class="chapter" href="pdf/chapter4.pdf" target="_blank">
+
+            <span class="number">04</span>
+
+            <span class="chapter-name">
+                Animal Kingdom
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 5 -->
+
+        <a class="chapter" href="pdf/chapter5.pdf" target="_blank">
+
+            <span class="number">05</span>
+
+            <span class="chapter-name">
+                Morphology of Flowering Plants
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 6 -->
+
+        <a class="chapter" href="pdf/chapter6.pdf" target="_blank">
+
+            <span class="number">06</span>
+
+            <span class="chapter-name">
+                Anatomy of Flowering Plants
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 7 -->
+
+        <a class="chapter" href="pdf/chapter7.pdf" target="_blank">
+
+            <span class="number">07</span>
+
+            <span class="chapter-name">
+                Structural Organisation in Animals
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 8 -->
+
+        <a class="chapter" href="pdf/chapter8.pdf" target="_blank">
+
+            <span class="number">08</span>
+
+            <span class="chapter-name">
+                Cell: The Unit of Life
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 9 -->
+
+        <a class="chapter" href="biomolecules.pdf" target="_blank">
+
+            <span class="number">09</span>
+
+            <span class="chapter-name">
+                Biomolecules
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 10 -->
+
+        <a class="chapter" href="pdf/chapter10.pdf" target="_blank">
+
+            <span class="number">10</span>
+
+            <span class="chapter-name">
+                Cell Cycle and Cell Division
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 11 -->
+
+        <a class="chapter" href="pdf/chapter11.pdf" target="_blank">
+
+            <span class="number">11</span>
+
+            <span class="chapter-name">
+                Transport in Plants
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 12 -->
+
+        <a class="chapter" href="pdf/chapter12.pdf" target="_blank">
+
+            <span class="number">12</span>
+
+            <span class="chapter-name">
+                Mineral Nutrition
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 13 -->
+
+        <a class="chapter" href="pdf/chapter13.pdf" target="_blank">
+
+            <span class="number">13</span>
+
+            <span class="chapter-name">
+                Photosynthesis in Higher Plants
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 14 -->
+
+        <a class="chapter" href="pdf/chapter14.pdf" target="_blank">
+
+            <span class="number">14</span>
+
+            <span class="chapter-name">
+                Respiration in Plants
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 15 -->
+
+        <a class="chapter" href="pdf/chapter15.pdf" target="_blank">
+
+            <span class="number">15</span>
+
+            <span class="chapter-name">
+                Plant Growth and Development
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 16 -->
+
+        <a class="chapter" href="pdf/chapter16.pdf" target="_blank">
+
+            <span class="number">16</span>
+
+            <span class="chapter-name">
+                Digestion and Absorption
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 17 -->
+
+        <a class="chapter" href="pdf/chapter17.pdf" target="_blank">
+
+            <span class="number">17</span>
+
+            <span class="chapter-name">
+                Breathing and Exchange of Gases
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 18 -->
+
+        <a class="chapter" href="pdf/chapter18.pdf" target="_blank">
+
+            <span class="number">18</span>
+
+            <span class="chapter-name">
+                Body Fluids and Circulation
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+        <!-- CHAPTER 19 -->
+
+        <a class="chapter" href="pdf/chapter19.pdf" target="_blank">
+
+            <span class="number">19</span>
+
+            <span class="chapter-name">
+                Excretory Products and Elimination
+            </span>
+
+            <span class="open">
+                📄 Open PDF →
+            </span>
+
+        </a>
+
+
+    </div>
 
 </div>
+
+
+<footer>
+
+    © 2026 ApexStudizz • Class 11 Biology
+
+</footer>
 
 </body>
 </html>
